@@ -6,7 +6,7 @@
 /*   By: lvan-gef <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/16 16:53:47 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2024/05/05 22:34:44 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 22:44:25 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ static	char	*real_path(char *suffix, char *filename)
 	fullname = ft_strjoin(suffix, filename);
 	if (!fullname)
 	{
-		free(suffix);
 		return (NULL);
 	}
 	return (fullname);
