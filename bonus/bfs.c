@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/12 20:15:10 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2023/04/13 21:19:47 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 22:39:44 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,10 @@ static	int	bfs(t_game *game, t_node *start, int collects, int find_exit)
 
 	q = ft_calloc(1, sizeof(t_bfs));
 	if (!q)
+	{
 		path_error(game, NULL, "Faild to create the queue struct");
+		return (1);
+	}
 	q->visited = create_visited(game);
 	if (!q->visited)
 		path_error(game, q, "Faild to create the visited map");
@@ -74,6 +77,11 @@ static	int	bfs(t_game *game, t_node *start, int collects, int find_exit)
 		path_error(game, q, "Faild to create the nodes map");
 	q->front = 0;
 	q->rear = 0;
+	if (start == NULL)
+	{
+		path_error(game, q, "Start node is NULL");
+		return (1);
+	}
 	enqueue(q, start);
 	q->visited[start->row][start->col] = true;
 	return (bfs_loop(game, q, collects, find_exit));
