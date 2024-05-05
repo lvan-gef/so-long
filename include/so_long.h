@@ -6,7 +6,7 @@
 /*   By: lvan-gef <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/12 16:26:41 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2023/04/19 14:16:28 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 21:30:20 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <fcntl.h>
 # include <stdbool.h>
 # include <stdio.h>
-# include "../libft/headers/libft.h"
+# include "../libft/include/libft.h"
 # include "../MLX42/include/MLX42/MLX42.h"
 
 typedef struct s_node
