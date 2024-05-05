@@ -4,3 +4,5 @@ MLX42/libmlx42.a
 MLX42/src/mlx_frag_shader.c
 MLX42/src/mlx_vert_shader.c
 libft/libft.a
+.cache/
+compile_commands.json
