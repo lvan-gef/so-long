@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/28 14:00:51 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2023/04/14 20:58:36 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 22:53:39 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ static int	check_elements(t_game *game, char *row, int row_c)
 	while (col < game->cols)
 	{
 		if (row[col] == 'E')
-				game->e += 1;
+			game->e += 1;
 		else if (row[col] == 'P')
 		{
 			if (game->py || game->px)
