@@ -3,7 +3,7 @@
 /*                                                        ::::::::            */
 /*   so_long.h                                          :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: lvan-gef <marvin@codam.nl>                   +#+                     */
+/*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/12 16:26:41 by lvan-gef      #+#    #+#                 */
 /*   Updated: 2024/05/05 23:16:17 by lvan-gef      ########   odam.nl         */
