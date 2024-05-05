@@ -3,7 +3,7 @@
 /*                                                        ::::::::            */
 /*   handle_state_utils.c                               :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: lvan-gef <marvin@codam.nl>                   +#+                     */
+/*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/16 19:54:18 by lvan-gef      #+#    #+#                 */
 /*   Updated: 2023/04/16 21:09:18 by lvan-gef      ########   odam.nl         */

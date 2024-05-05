@@ -3,7 +3,7 @@
 /*                                                        ::::::::            */
 /*   read_map_utils.c                                   :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: lvan-gef <marvin@codam.nl>                   +#+                     */
+/*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/16 16:57:26 by lvan-gef      #+#    #+#                 */
 /*   Updated: 2023/04/16 16:57:46 by lvan-gef      ########   odam.nl         */

@@ -3,7 +3,7 @@
 /*                                                        ::::::::            */
 /*   prep_textures.c                                    :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: lvan-gef <marvin@codam.nl>                   +#+                     */
+/*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/16 16:53:47 by lvan-gef      #+#    #+#                 */
 /*   Updated: 2024/05/05 22:44:25 by lvan-gef      ########   odam.nl         */
