@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/16 16:57:26 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2023/04/16 16:57:46 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 23:36:31 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 void	add_spacing(t_game *game, char *line, int fd)
 {
-	int		i;
-	int		len;
+	size_t	i;
+	size_t	len;
 	size_t	size;
 
 	size = len_arr((void **)game->map);
 	if (size != 1)
 		return ;
 	i = 0;
-	len = sl_strlen(line);
+	len = ft_strlen(line);
 	while (i < len)
 	{
 		game->map[0][i] = '1';

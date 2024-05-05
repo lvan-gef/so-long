@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/12 15:37:59 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2024/05/05 23:33:11 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 23:35:17 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,8 +102,8 @@ static	void	build_map(t_game *game, int fd)
 		{
 			free(raw_line);
 			if (!game->cols)
-				game->cols = sl_strlen(line);
-			if (game->cols != sl_strlen(line))
+				game->cols = ft_strlen(line);
+			if (game->cols != (int)ft_strlen(line))
 				build_error(game, "Rows are not the same lenght", line, fd);
 			else
 				create_row(game, line, fd);
