@@ -6,13 +6,13 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/12 20:15:16 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2024/05/05 22:21:56 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 23:10:26 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/so_long.h"
 
-void	enqueue(t_bfs *q, t_node *node)
+void	enqueue(t_bfs *q, const t_node *node)
 {
 	q->nodes[q->rear] = *node;
 	q->rear++;
@@ -27,12 +27,12 @@ t_node	dequeue(t_bfs *q)
 	return (node);
 }
 
-bool	is_empty(t_bfs *q)
+bool	is_empty(const t_bfs *q)
 {
 	return (q->front == q->rear);
 }
 
-int	is_valid(t_game *game, t_node node)
+int	is_valid(const t_game *game, t_node node)
 {
 	if (node.row > 0 && node.row < game->rows
 		&& node.col > 0 && node.col < game->cols)

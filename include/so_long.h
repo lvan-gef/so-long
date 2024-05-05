@@ -6,7 +6,7 @@
 /*   By: lvan-gef <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/12 16:26:41 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2024/05/05 21:30:20 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 23:16:17 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,25 +105,24 @@ void			path_error(t_game *game, t_bfs *bfs, char *msg);
 
 // util stuff
 size_t			len_arr(void **elements);
-mlx_texture_t	*load_png(t_game *game, char *file);
+mlx_texture_t	*load_png(t_game *game, const char *file);
 mlx_image_t		*to_png(t_game *game, mlx_texture_t **textu, int i);
-int				sl_strlen(char *str);
 
 // bfs stuff
 int				find_path(t_game *game);
 
 // bfs util stuff
 t_node			*create_node(int row, int col);
-bool			**create_visited(t_game *game);
+bool			**create_visited(const t_game *game);
 
 // bfs free stuff
 int				bfs_free_q(t_bfs *bfs);
 void			bfs_free_nodes(void **nodes);
 
 // bfs queue
-void			enqueue(t_bfs *q, t_node *node);
+void			enqueue(t_bfs *q, const t_node *node);
 t_node			dequeue(t_bfs *q);
-bool			is_empty(t_bfs *q);
+bool			is_empty(const t_bfs *q);
 t_node			*find_neighbors(t_game *game, t_bfs *q,
 					t_node current, int dir);
 

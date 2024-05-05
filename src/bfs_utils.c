@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/12 20:20:05 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2023/04/13 16:46:19 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 23:11:42 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ t_node	*create_node(int row, int col)
 	return (node);
 }
 
-bool	**create_visited(t_game *game)
+bool	**create_visited(const t_game *game)
 {
 	bool	**visited;
 	int		i;

@@ -6,13 +6,13 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/28 14:00:51 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2024/05/05 22:51:29 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 23:15:59 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/so_long.h"
 
-int	only_walls(t_game *game, char *row, int cols)
+int	only_walls(t_game *game, const char *row, int cols)
 {
 	int	col;
 
@@ -29,7 +29,7 @@ int	only_walls(t_game *game, char *row, int cols)
 	return (1);
 }
 
-int	check_row(t_game *game, char *row, int cols)
+int	check_row(t_game *game, const char *row, int cols)
 {
 	int	col;
 
@@ -57,7 +57,7 @@ int	check_row(t_game *game, char *row, int cols)
 	return (1);
 }
 
-static int	check_elements(t_game *game, char *row, int row_c)
+static int	check_elements(t_game *game, const char *row, int row_c)
 {
 	int	col;
 

@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/10 19:27:13 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2023/04/12 20:21:49 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 23:15:18 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	len_arr(void **elements)
 	return (i);
 }
 
-mlx_texture_t	*load_png(t_game *game, char *file)
+mlx_texture_t	*load_png(t_game *game, const char *file)
 {
 	mlx_texture_t	*img;
 
@@ -51,16 +51,4 @@ mlx_image_t	*to_png(t_game *game, mlx_texture_t **textu, int i)
 	else
 		mlx_delete_texture(textu[i]);
 	return (img);
-}
-
-int	sl_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	if (!str)
-		return (i);
-	while (str[i])
-		i++;
-	return (i);
 }
