@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   create_map.c                                       :+:    :+:            */
+/*   read_map.c                                         :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/12 15:37:59 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2023/04/16 16:56:47 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 23:33:11 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ static	void	expend_map(t_game *game, char *line, int fd)
 	map = ft_calloc(size + 2, sizeof(char *));
 	if (map)
 	{
-		copy_map(game, map, fd, size);
+		map = copy_map(game, map, fd, size);
 		if (!map)
 			build_error(game, "Faild to make the new map", line, fd);
 		return ;

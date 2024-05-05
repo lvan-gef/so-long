@@ -6,13 +6,13 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/16 16:55:51 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2024/05/05 22:45:06 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 23:33:11 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/so_long.h"
 
-static	char	*real_path(char *suffix, char *filename)
+static	char	*real_path(const char *suffix, const char *filename)
 {
 	char	*fullname;
 
@@ -24,7 +24,7 @@ static	char	*real_path(char *suffix, char *filename)
 	return (fullname);
 }
 
-static	void	set_paths(t_game *game, char *suffix)
+static	void	set_paths(t_game *game, const char *suffix)
 {
 	game->src_img[0] = real_path(suffix, "/ground_05.png");
 	game->src_img[1] = real_path(suffix, "/crate_01.png");

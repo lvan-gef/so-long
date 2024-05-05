@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/12 20:15:10 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2024/05/05 22:39:44 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 23:30:08 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ static	int	bfs_loop(t_game *game, t_bfs *q, int collects, int find_exit)
 	return (0);
 }
 
-static	int	bfs(t_game *game, t_node *start, int collects, int find_exit)
+static	int	bfs(t_game *game, const t_node *start, int collects, int find_exit)
 {
 	t_bfs	*q;
 

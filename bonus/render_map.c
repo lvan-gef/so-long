@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/05 22:06:20 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2023/04/16 17:52:59 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 23:31:37 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	render_item(t_game *game, mlx_image_t *img,
 	mlx_image_to_window(game->mlx, img, col * game->img_s, row * game->img_s);
 }
 
-static	void	render_element(t_game *game, char *str)
+static	void	render_element(t_game *game, const char *str)
 {
 	int	row;
 	int	col;
