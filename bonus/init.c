@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/28 13:51:06 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2023/04/16 16:50:27 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 22:44:02 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,10 @@ t_game	*init_game(void)
 
 	game = ft_calloc(1, sizeof(t_game));
 	if (!game)
+	{
 		init_error(NULL, "Malloc faild to get the mem!");
+		return (NULL);
+	}
 	init_state(game);
 	return (game);
 }

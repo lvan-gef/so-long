@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/12 20:15:16 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2023/04/14 20:15:17 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 22:42:15 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,10 @@ t_node	*find_neighbors(t_game *game, t_bfs *q, t_node current, int dir)
 	else
 		neighbor = create_node(current.row, current.col - 1);
 	if (!neighbor)
+	{
 		path_error(game, q, "Faild to create a node, malloc ofc");
+		return (NULL);
+	}
 	if (is_valid(game, *neighbor))
 		return (neighbor);
 	free(neighbor);
