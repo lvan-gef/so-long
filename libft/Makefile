@@ -52,7 +52,7 @@ $(OBJDIR)mem/%.o: $(MEMDIR)%.c
 	$(CC) $(HEADERS) -c $(CFLAGS) -o $@ $<
 
 # print
-ft_$(OBJDIR)printer/%.o: $(PRINTDIR)%.c
+$(OBJDIR)printer/%.o: $(PRINTDIR)%.c
 	@mkdir -p $(OBJDIR)printer
 	$(CC) $(HEADERS) -c $(CFLAGS) -o $@ $<
 
