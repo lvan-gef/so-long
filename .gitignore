@@ -6,3 +6,4 @@ MLX42/src/mlx_vert_shader.c
 libft/libft.a
 .cache/
 compile_commands.json
+infer-out
