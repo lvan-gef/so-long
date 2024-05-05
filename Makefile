@@ -16,7 +16,7 @@ BNS_SRCOBJ = $(BNS_SRCFILES:%.c=$(BNS_OBJDIR)%.o)
 
 LIBMLX = ./MLX42
 LIBFT = ./libft
-HEADERS = -I so_long.h -I $(LIBMLX)/include -I $(LIBFT)/headers
+HEADERS = -I include -I $(LIBMLX)/include -I $(LIBFT)/headers
 
 .PHONY: all bonus libft libmlx clean fclean re
 
@@ -29,13 +29,11 @@ $(NAME): $(SRCOBJ)
 	$(CC) $(GFLAGS) $(SRCOBJ) $(LIBMLX)/libmlx42.a -g3 $(LIBFT)/libft.a -ldl -lglfw -pthread -lm -o $(NAME)
 
 
-
 bonus: $(BNS_SRCOBJ)
 	$(MAKE) -C $(LIBMLX)
 	$(MAKE) -C $(LIBFT)
 	# $(CC) $(GFLAGS) $(BNS_SRCOBJ) $(LIBMLX)/libmlx42.a -g3 -fsanitize=address $(LIBFT)/libft.a -lglfw3 -framework Cocoa -framework OpenGL -framework IOKit -o $(NAME)
 	$(CC) $(GFLAGS) $(BNS_SRCOBJ) $(LIBMLX)/libmlx42.a -g3 $(LIBFT)/libft.a -ldl -lglfw -pthread -lm -o $(NAME)
-
 
 $(OBJDIR)%.o: $(SRCDIR)%.c
 	@mkdir -p obj
