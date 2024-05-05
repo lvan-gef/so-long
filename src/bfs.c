@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/12 20:15:10 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2024/05/05 22:19:31 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 22:39:53 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ static	int	bfs(t_game *game, t_node *start, int collects, int find_exit)
 	q->rear = 0;
 	if (start == NULL)
 	{
-		path_error(game, NULL, "Start node is NULL");
+		path_error(game, q, "Start node is NULL");
 		return (1);
 	}
 	enqueue(q, start);
