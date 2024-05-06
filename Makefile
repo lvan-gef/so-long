@@ -1,6 +1,6 @@
 NAME = so_long
 
-CC = gcc
+CC = cc
 GFLAGS = -Wall -Werror -Wextra -g3
 
 SRCDIR = src/
