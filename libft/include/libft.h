@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/06 14:39:10 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2024/05/05 02:51:18 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/23 00:48:49 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,14 +52,18 @@ void		ft_putnbr_fd(int n, int fd);
 void		ft_putstr_fd(const char *s, int fd);
 
 // src/str
+double		ft_atof(const char *str);
 int			ft_atoi(const char *str);
+long int	ft_atoli(const char *str);
 int			ft_isalnum(int c);
 int			ft_isalpha(int c);
 int			ft_isascii(int c);
 int			ft_isdigit(int c);
 int			ft_isprint(int c);
+int			ft_iswhitespace(int c);
 char		*ft_itoa(int n);
 char		**ft_split(char const *s, char c);
+char		**ft_split_ws(char const *s);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strdup(const char *s1);
 void		ft_striteri(char *s, void (*f)(unsigned int, char*));
