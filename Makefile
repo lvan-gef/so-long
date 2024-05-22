@@ -1,7 +1,7 @@
 NAME = so_long
 
 CC = cc
-GFLAGS = -Wall -Werror -Wextra -g3
+GFLAGS = -Wall -Werror -Wextra -Wshadow -Wpedantic
 
 SRCDIR = src/
 BNS_SRCDIR = bonus/
